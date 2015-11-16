@@ -1,0 +1,53 @@
+/* usual control elements */
+
+.control-container {
+    /* as far as controls are displayed as inline-block this puts them to center */
+    /* choose left or right or center to put it to left/right/center */
+    text-align: center;
+    /* margin from the bottom of slider */
+    /* see demo to learn how to put panel over the slider */
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 500;
+    width: 100%;
+}
+
+.control-element,
+.control-element-active {
+    /* this displays element as inline-block; zoom and *display is a hack for ie7 which does not support inline-block */
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    /* change this to the values you need */
+    width: 14px;
+    height: 14px;
+    border-radius: 10px;
+    background: rgb(0, 94, 47);
+    margin: 0 5px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+.control-element-active {
+    background: #DADA46;
+}
+
+
+/* messages */
+
+.message-container {
+    background: rgba(32,32,32,.8);
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    padding: 25px;
+    max-width: 60%;
+    
+    h2 {
+        margin-top: 0;
+        font-size: 25px;
+    }
+}
